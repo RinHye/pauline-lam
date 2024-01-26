@@ -1,0 +1,75 @@
+.phone_screen {
+    width: max-content;
+    margin: auto;
+    .phone_iframe, .circle {
+        position: absolute;
+        margin: auto;
+    }
+    img {
+        z-index: 1;
+        width: 245px;
+        height: 520px;
+
+    }
+    .phone_iframe {
+        width: 223px;
+        height: auto;
+        z-index: 2;
+        border-radius: 20px;
+        @media screen and (max-width: 767px) {
+            width: 218px;
+            height: 486px;
+        }
+    }
+    
+
+    /* Animation cercles */
+    @keyframes rotating {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes smanimate {
+        0% {
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @keyframes mdanimate {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .circle {
+        z-index: 0;
+        width: 450px;
+        animation: rotating 10s linear infinite;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    
+    .sm_circle {
+        animation: smanimate 5s ease infinite alternate;
+    }
+    .md_circle {
+        animation: mdanimate 5s ease infinite alternate;
+    }
+}

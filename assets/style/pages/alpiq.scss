@@ -1,0 +1,87 @@
+main.fiche-projet {
+    min-height: 100vh;
+    overflow-x: hidden;
+    @media screen and (max-width: 991px) {
+        height: unset;
+    }
+}
+
+.section_projet {
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1400px;
+
+    @media screen and (max-width: 1500px) {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 991px) {
+    .tablet-portrait iframe {
+        min-height: 60vh;
+    }
+}
+.right-content {
+    min-width: 50%;
+} 
+
+.img-neon-border.img-projet {
+    width: auto;
+    height: 454px;
+
+    @media screen and (min-width: 2000px) {
+        margin-right: 100px;
+    }
+    @media screen and (max-width:1645px) {
+        margin-right: 2em;
+    }
+
+    @media screen and (max-width:1445px) {
+        
+        max-width: 80%;
+        height: auto;
+
+    }
+    @media screen and (max-width: 992px) {
+        max-width: unset;
+        width: auto;
+        height: auto;
+        margin-bottom: 2em;
+        margin-right: unset;
+    }
+}
+
+.icons-stack-list {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+    @media screen and (max-width: 456px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (max-width: 260px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.icon-stack {
+    @media screen and (max-width: 991px) {
+        margin: auto;
+    }
+    img {
+        height: 50px;
+    }
+}
+.title_link-icon {
+    gap: 10px;
+}
+.link-icon {
+    @media screen and (max-width:1200px) {
+        width: 30px;
+    }
+}

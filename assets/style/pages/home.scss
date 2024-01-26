@@ -1,0 +1,51 @@
+/* Homepage */
+#home {
+    overflow: hidden;
+    height: 100%;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+#home header {
+    background: $bg-gradient-half;
+
+    padding: 10em;
+    width: 60%;
+    @media screen and (max-width: 1320px) {
+        width: 50%;
+        padding: unset;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100vw;
+        padding: 80px 50px;
+    }
+}
+
+.home-content-text {
+    @media screen and (max-width:767px) {
+        &>div {
+        margin-top: 50px;
+        }
+
+    }
+}
+.div-img-profil {
+
+    width: 40%;
+    height: 100vh;
+    @media screen and (max-width: 1320px) {
+        width: 50%;
+        height: unset;
+    }
+}
+.circle-neon-img {
+    border-radius: 250px;
+    box-shadow: 8px 8px 20px 0px $lavender, -8px -8px 20px 0px $blue;
+    width: 200px;
+    height: 200px;
+}
+.circle-neon-img {
+    object-fit: cover;
+    object-position: top;
+}

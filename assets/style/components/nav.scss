@@ -1,0 +1,51 @@
+/* Nav */
+nav {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    @media screen and (max-width: 767px) {
+        right: 40px;
+        top: 40px;
+    }
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    overflow: visible;
+    .menu-bottom, .menu-top {
+        transition: 400ms;
+    }
+
+    &.active {
+        
+        .menu-top {
+            transform: rotate(45deg) translate(8px, 1px);
+            transform-origin: center top;
+            transition: 400ms;
+        }
+        .menu-bottom {
+            position: relative;
+            transform: rotate(-45deg) translate(-14px, -14px);
+            transform-origin: center top;
+            transition: 400ms;
+            position: relative;
+        }
+    }
+}
+.active {
+        
+        .menu-top {
+            transform: rotate(45deg) translate(8px, 1px);
+            transform-origin: center top;
+            transition: 400ms;
+        }
+        .menu-bottom {
+            position: relative;
+            transform: rotate(-45deg) translate(-14px, -14px);
+            transform-origin: center top;
+            transition: 400ms;
+            position: relative;
+        }
+    }

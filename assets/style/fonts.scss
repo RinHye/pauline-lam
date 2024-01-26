@@ -1,0 +1,136 @@
+/* fonts */
+body {
+  font-size: 18px;
+  @media screen and (max-width: 1445px) {
+    font-size: 16px;
+  }
+}
+body, .titles, .btn-label {
+  font-family: 'Catamaran';
+}
+body, .titles, .btn-label, p, h1, .quotes {
+  color: $white;
+}
+.titles {
+  /*xxl*/
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 120px */
+  letter-spacing: -0.88px;
+  
+  @media screen and (max-width: 1379px) {
+    font-size: 42px;
+  }
+  @media screen and (max-width: 1120px) {
+    font-size: 38px;
+  }
+  @media screen and (max-width: 745px) {
+    font-size: 40px;
+  }
+
+}
+h2 {
+  font-size: 50px;
+    @media screen and (max-width: 1200px) {
+      font-size: 35px;
+    }
+}
+h3 {
+  font-family: 'Open Sans';
+  font-size: 35px;
+  font-weight: 600;
+  @media screen and (max-width: 1445px) {
+    font-size: 25px;
+  }
+}
+
+.h1-subtitles {
+  /*xxl*/
+  font-family: 'Open Sans';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 52.5px */
+  letter-spacing: -0.385px;
+
+  @media screen and (max-width: 1379px) {
+    font-size: 28px;
+  }
+  @media screen and (max-width: 1120px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 845px) {
+    font-size: 18px;
+  }
+}
+.subtitle_card , .quotes {
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.quotes {
+  /*xxl*/
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 150%; /* 67.5px */
+  letter-spacing: -0.495px;
+  @media screen and (max-width: 1379px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 1120px) {
+    font-size: 26px;
+  }
+  @media screen and (max-width: 845px) {
+    font-size: 24px;
+  }
+}
+
+.btn-label {
+  /*xxl*/
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+  text-transform: uppercase;
+}
+
+.btn-label {
+  @media screen and (max-width: 1379px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 845px) {
+    font-size: 16px;
+  }
+}
+
+.section_home p {
+  font-size: 20px;
+  @media screen and (max-width: 845px) {
+    font-size: 18px;
+  }
+}
+
+.section_home .subtitle_card p, 
+.btn-label {
+  font-size: 18px;
+  @media screen and (max-width: 845px) {
+    font-size: 16px;
+  }
+}
+
+.highlighted-text {
+  color: $white;
+  text-shadow: 0px 0px 10px $white;
+  font-weight: 600;
+  a.unstyled-link:hover, &.unstyled-link:hover,
+  a.unstyled-link:active, &.unstyled-link:active  {
+    text-shadow: 0px 2px 10px $blue;
+    color: $blue;
+    transition: 300ms;
+  }
+}
+
+.highlighted_word {
+  color: $blue;
+}

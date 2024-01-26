@@ -1,0 +1,14 @@
+.cards {
+    border-radius: 20px;
+    border: 2px solid $black;
+    border-radius: 8px;
+    padding: 30px;
+    box-sizing: border-box;;
+    background: radial-gradient(circle at 100% 100%, $black 0, $black 6px, transparent 6px) 0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, $black 0, $black 6px, transparent 6px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, $black 0, $black 6px, transparent 6px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, $black 0, $black 6px, transparent 6px) 100% 100%/8px 8px no-repeat,
+    linear-gradient($black, $black) 50% 50%/calc(100% - 4px) calc(100% - 16px) no-repeat,
+    linear-gradient($black, $black) 50% 50%/calc(100% - 16px) calc(100% - 4px) no-repeat,
+    linear-gradient(146deg, $black 0%, #d794fa 50%, #01b0d3 100%);;
+}

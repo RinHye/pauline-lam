@@ -1,0 +1,7 @@
+.backToTop {
+    background-color: $black;
+    padding: 10px;
+    svg {
+        transform: rotate(180deg);
+    }
+}

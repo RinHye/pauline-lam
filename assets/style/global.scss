@@ -1,0 +1,93 @@
+html, body, #__nuxt, main{
+  color: $white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: $black;
+  @media screen and (max-width: 991px) {
+    height: auto;
+  }
+
+}
+
+main {
+ 
+  overflow: scroll;
+  scroll-snap-type: proximity;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y proximity;
+  .section_page, section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(208, 214, 255, 0.1);; /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $lavender; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  //border: 1px solid $lavender; /* creates padding around scroll thumb */
+}
+
+.unstyled-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.section_home {
+
+  background: $bg-gradient-full;
+
+}
+.section_page {
+  background: $black;
+  width: 100vw;
+}
+
+.section_home {
+  padding: 150px;
+  &.last_section {
+    padding: 150px 150px 260px 150px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 80px;
+    &.last_section {
+      padding: 80px 80px 189px 80px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding: 50px;
+    &.last_section {
+      padding: 50px 50px 156px 50px;
+    }
+  }
+}
+.last_div-margin {
+  padding-bottom: 150px;
+}
+
+.vertical_img {
+  width: 50%;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.reseaux_btn {
+  svg {
+    width: 50px;
+    @media screen and (max-width: 991px) {
+      width: 40px;
+    }
+  }
+}
+
+@import 'variables';
