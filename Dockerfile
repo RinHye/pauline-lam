@@ -10,7 +10,7 @@ RUN apk update && apk upgrade
 RUN apk add git
 
 # copy the app, note .dockerignore
-COPY . /usr/src/nuxt-app/
+COPY ./CV /usr/src/nuxt-app/
 RUN npm cache verify
 RUN npm install
 
