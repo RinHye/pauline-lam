@@ -1,136 +1,28 @@
-version: '3.3'
+version: '3'
 
 services:
-
-  traefik:
-    image: traefik:2.0
-    command:
-      - --providers.docker
-      - --providers.docker.exposedByDefault=false
+  nuxt:
+    image: node:14.21.3-alpine
+    container_name: nuxt-app
+    working_dir: /usr/src/nuxt-app
     ports:
-      - "80:80"
+      - "3000:3000"
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    networks:
-      default:
-        aliases:
-          - "api.$BASE_DOMAIN"
+      - ./app:/usr/src/nuxt-app
+    command: "npm run dev"
 
-  api:
-    user: "${USER_ID:-1000}:${USER_ID:-1000}"
-    image: node:12-alpine
-    working_dir: /opt/app
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.api_router.rule=Host(`api.$BASE_DOMAIN`)
-      - traefik.http.routers.api_router.service=api_service
-      - traefik.http.services.api_service.loadbalancer.server.port=3000
-    command: ash -c "yarn install \&\& yarn watch"
-    environment:
-      NODE_ENV: "development"
-      REDIS_PORT: "6379"
-      REDIS_HOST: "redis"
-      LISTEN_PORT: "3000"
-      ALPIQ_DEFAULT_OFFER: "$ALPIQ_DEFAULT_OFFER"
-      ALPIQ_DEFAULT_OFFER_VERSION: "$ALPIQ_DEFAULT_OFFER_VERSION"
-      API_TOKEN: "$API_TOKEN"
-      BUTTERCMS_TOKEN: "$BUTTERCMS_TOKEN"
-      ENEDIS_CONTRAT_ID: "$ENEDIS_CONTRAT_ID"
-      ENEDIS_HOMOLOGATION: "$ENEDIS_HOMOLOGATION"
-      ENEDIS_CERTIFICATE_PATH: "$ENEDIS_CERTIFICATE_PATH"
-      ENEDIS_KEY_PATH: "$ENEDIS_KEY_PATH"
-      ENEDIS_URL: "$ENEDIS_URL"
-      ENEDIS_LOGIN: "$ENEDIS_LOGIN"
-      ENEDIS_BOUCHONS_URL: "$ENEDIS_BOUCHONS_URL"
-      ENVIRONNEMENT: "$ENVIRONNEMENT"
-      DQE_LICENCE: "$DQE_LICENCE"
-      DQE_URL: "$DQE_URL"
-      FRONT_URL_PARTICULIERS: "http://particuliers.$BASE_DOMAIN"
-      FRONT_URL_PROFESSIONNELS: "http://professionnels.$BASE_DOMAIN"
-      JWT_SECRET: "$JWT_SECRET"
-      NETREVIEWS_URL: "$NETREVIEWS_URL"
-      NETREVIEWS_ID_WEBSITE: "$NETREVIEWS_ID_WEBSITE"
-      OPENCELL_PASSWORD: "$OPENCELL_PASSWORD"
-      OPENCELL_URL: "$OPENCELL_URL"
-      OPENCELL_LOGIN: "$OPENCELL_LOGIN"
-      SENDINBLUE_URL: "$SENDINBLUE_URL"
-      SENDINBLUE_KEY: "$SENDINBLUE_KEY"
-      ZENDESK_URL: "$ZENDESK_URL"
-      ZENDESK_LOGIN: "$ZENDESK_LOGIN"
-      ZENDESK_TOKEN: "$ZENDESK_TOKEN"
-      ZENDESK_GROUP_ID: "$ZENDESK_GROUP_ID"
-      ZENDESK_AQUISITION_GROUP_ID: "$ZENDESK_AQUISITION_GROUP_ID"
-      ZENDESK_FAQ_CATEGORY_ID: "$ZENDESK_FAQ_CATEGORY_ID"
-      ZENDESK_FAQ_HOME_LABEL: "$ZENDESK_FAQ_HOME_LABEL"
-      API_QUADRATIC: "$API_QUADRATIC"
-      PAYTWEAK_URL: "$PAYTWEAK_URL"
-      PAYTWEAK_TOKEN: "$PAYTWEAK_TOKEN"
-      PAYTWEAK_SECRET: "$PAYTWEAK_SECRET"
+  bootstrap:
+    image: node:14.21.3-alpine
+    container_name: bootstrap-app
+    working_dir: /usr/src/nuxt-app
     volumes:
-      - ./api:/opt/app:rw
+      - ./app:/usr/src/nuxt-app
+    command: "npm install bootstrap"
 
-  front:
-    user: "${USER_ID:-1000}:${USER_ID:-1000}"
-    depends_on:
-      - api
-    image: node:12-alpine
-    working_dir: /opt/app
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.front_router.rule=Host(`$BASE_DOMAIN`,`professionnels.$BASE_DOMAIN`,`particuliers.$BASE_DOMAIN`)
-      - traefik.http.routers.front_router.service=front_service
-      - traefik.http.services.front_service.loadbalancer.server.port=3000
-    command: ash -c "yarn install \&\& yarn dev"
-    environment:
-      ALPIQ_DEFAULT_OFFER: "$ALPIQ_DEFAULT_OFFER"
-      ALPIQ_DEFAULT_OFFER_VERSION: "$ALPIQ_DEFAULT_OFFER_VERSION"
-      ALPIQ_PREMIUM_OFFER_VERSION: "$ALPIQ_PREMIUM_OFFER_VERSION"
-      API_GEO_GOUV: "$API_GEO_GOUV"
-      API_TOKEN: "$API_TOKEN"
-      API_URL: "http://api.$BASE_DOMAIN"
-      BASE_URL_PARTICULIERS: "http://particuliers.$BASE_DOMAIN"
-      BASE_URL_PROFESSIONNELS: "http://professionnels.$BASE_DOMAIN"
-      BUTTERCMS_TOKEN: "$BUTTERCMS_TOKEN"
-      ENEDIS_HOMOLOGATION: "$ENEDIS_HOMOLOGATION"
-      ENVIRONNEMENT: "$ENVIRONNEMENT"
-      GOOGLE_GTM_AUTH: "$GOOGLE_GTM_AUTH"
-      GOOGLE_GTM_DEBUG: "$GOOGLE_GTM_DEBUG"
-      GOOGLE_GTM_ENV: "$GOOGLE_GTM_ENV"
-      GOOGLE_GTM_ENV_WORK: "$GOOGLE_GTM_ENV_WORK"
-      GOOGLE_GTM_TAG: "$GOOGLE_GTM_TAG"
-      JWT_SECRET: "$JWT_SECRET"
-      KEYCLOAK_URL: "$KEYCLOAK_URL"
-      STATIC_FILES_PATH: "$STATIC_FILES_PATH"
-      ZENDESK_AQUISITION_GROUP_ID: "$ZENDESK_AQUISITION_GROUP_ID"
-      ZENDESK_CONTACT_REASON_FIELD_ID: "$ZENDESK_CONTACT_REASON_FIELD_ID"
-      ZENDESK_FAQ_EC_LABEL: "$ZENDESK_FAQ_EC_LABEL"
-      ZENDESK_FAQ_HOME_LABEL: "$ZENDESK_FAQ_HOME_LABEL"
-      ZENDESK_GROUP_ID: "$ZENDESK_GROUP_ID"
-      ZENDESK_TOP_FAQ_EC_LABEL: "$ZENDESK_TOP_FAQ_EC_LABEL"
-      ZENDESK_TOP_FAQ_HOME_LABEL: "$ZENDESK_TOP_FAQ_HOME_LABEL"
-      DQE_URL: "$DQE_URL"
-      DQE_LICENCE: "$DQE_LICENCE"
-      API_QUADRATIC: "$API_QUADRATIC"
+  sass:
+    image: node:14.21.3-alpine
+    container_name: sass-app
+    working_dir: /usr/src/nuxt-app
     volumes:
-      - ./nuxt:/opt/app:rw
-
-  redis:
-    image: redis
-    volumes:
-      - redis_data:/data:rw
-
-  myadmin:
-    image: erikdubbelboer/phpredisadmin
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.redis_router.rule=Host(`redis.$BASE_DOMAIN`)
-    environment:
-      REDIS_1_HOST: "redis"
-      REDIS_1_NAME: "redis"
-      REDIS_1_PORT: "6379"
-      #ADMIN_USER: "admin"
-      #ADMIN_PASS: "admin"
-
-volumes:
-  redis_data:
-    driver: local
+      - ./app:/usr/src/nuxt-app
+    command: "npm install sass sass-loader"
