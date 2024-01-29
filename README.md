@@ -60,7 +60,7 @@ pnpm run preview
 yarn preview
 
 #pour mettre sur docker
-docker run -it -p 3000:3000 cv 
+docker run -it -p 3000:3000 newgitcv
 
 ```
 

@@ -120,7 +120,7 @@
                     <div class="mb-5">
                         <h3 class="mb-5 text-start">Style guide</h3>
                         <p>
-                            Après avoir réalisé le <span class="fw-bold highlighted_word">moodboard</span>, j'ai créé le <span class="fw-bold highlighted_word">style guide</span> permettre de garder de la <span class="fw-bold highlighted_word">consistence</span> et de la <span class="fw-bold highlighted_word">cohérence</span> à la réalisation des maquettes.
+                            Après avoir réalisé le <span class="fw-bold highlighted_word">moodboard</span>, j'ai créé le <span class="fw-bold highlighted_word">style guide</span> qui permet de garder de la <span class="fw-bold highlighted_word">consistence</span> et de la <span class="fw-bold highlighted_word">cohérence</span> à la réalisation des maquettes.
                         </p>
                         <div class="text-center my-5">
                           <img class="vertical_img" src="/images/projets/shein/style.png" alt="Style guide réalisé pour SHEIN"/>
