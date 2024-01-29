@@ -1,16 +1,22 @@
 <template>
-    <nav>
-        <div class="d-block d-md-none">
-            <button @click="handleClick()" :class="active ? 'active' : ''">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <path class="menu-top" d="M1 10L35 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="menu-bottom" d="M1 25L35 25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
-        <div class="d-md-block d-none nav-desktop">
-            
-        </div>
+    <nav class="text-uppercase">
+        <label>
+            <input id="navBox" type="checkbox"/>
+            <span class="menu">
+                <span class="hamburger"></span>
+            </span>
+            <ul class="nav_links">
+                <li @click="uncheck()" class="pb-4">
+                    <a href="/">Accueil</a>
+                </li>
+                <li @click="uncheck()" class="pb-4">
+                    <a href="#projets">Mes projets</a>
+                </li>
+                <li>
+                    <a @click="uncheck()" href="#about">A propos de moi</a>
+                </li>
+            </ul>
+        </label>
     </nav>
 </template>
 <!--
@@ -37,7 +43,31 @@
             handleClick() {
                 this.active = !this.active;
             },
-        }
+            uncheck() {
+                let input = document?.getElementById('navBox') as HTMLInputElement;
+                if (input?.checked) {
+                    input.checked = !(input.checked);
+                }
+
+            },
+            handleScroll() {
+                if(process.client){
+                    const currentScrollPosition = window.scrollY
+                    if(currentScrollPosition > 0){
+                        let input = document?.getElementById('navBox') as HTMLInputElement;
+                        if (input?.checked) {
+                            input.checked = !(input.checked);
+                        }
+                    }
+
+                }
+            }
+        },
+        mounted() {
+            if(process.client){
+                    window.addEventListener("scroll", this.handleScroll);
+            }
+        },
     };
     
 </script>

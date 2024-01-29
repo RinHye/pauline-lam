@@ -5,6 +5,7 @@ html, body, #__nuxt, main{
   display: flex;
   align-items: center;
   background-color: $black;
+  overflow-x: hidden;
   @media screen and (max-width: 991px) {
     height: auto;
   }

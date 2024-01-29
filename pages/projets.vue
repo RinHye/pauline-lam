@@ -1,19 +1,22 @@
 <template>
-    <main id="projets" class="d-block">
+    <main class="fiche-projet d-flex flex-column justify-content-md-between align-items-center">
         <header>
-            <h1 class="mb-5">Portfolio</h1>
-            <!-- <Nav :current-link="currentLink"/> -->
+            <Nav/>
         </header>
-        <div class="projets">
-            <ProjectCard 
-                v-for="p in projects" 
-                :image="p.imageRef"
-                :title="p.title"
-                :subtitle="p.subtitle" 
-                :link="p.link"
-             />
-        </div>
-        
+        <section class="pt-5 section_page d-flex justify-content-center">
+            <div class="section_projet">
+                <h2 class="mb-5">Mon portfolio</h2>
+                <div class="projets">
+                    <ProjectCard 
+                        v-for="p in projects" 
+                        :image="p.imageRef"
+                        :title="p.title"
+                        :subtitle="p.subtitle" 
+                        :link="p.link"
+                    />
+                </div>
+            </div>
+        </section>
 
     </main>
 </template>

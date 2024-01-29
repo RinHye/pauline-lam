@@ -11,7 +11,8 @@
             </div>
 
             <header class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-                <!--<Nav :current-link="currentLink"/>  -->
+                <Nav/> 
+
                 <div class="d-block d-md-none">
                     <img
                     class="circle-neon-img"
@@ -57,7 +58,7 @@
             </div>
         </section>
 
-        <section class="section_home last_section d-flex justify-content-center align-items-center">
+        <section id="about" class="section_home last_section d-flex justify-content-center align-items-center">
             <div class="d-flex flex-column justify-content-center section">
                 
                 <h2 class="mb-5">A propos de moi</h2>
@@ -85,7 +86,7 @@
             const projects : any[] = PROJECTS
 
             const labelProjets = 'Voir mes projets'
-            const currentLink = 'home'
+            const currentLink = '/'
             const projetsLink = '#projets'
             return {
 
@@ -125,27 +126,7 @@
 
         },
         watch: {
-            /*
-            showMore(newValue, oldValue) {
-                if(this.showMore === true) {
-                    let parentEl = document.getElementById('scrollParent') || document.documentElement
-                    console.log(parentEl.scrollHeight)
-                    console.log(parentEl)
-                    console.log("HE : " + parentEl.scrollTop)
-                    
-                    parentEl.scrollTop = 555
-                    window.scrollTo(0, 555)
-                    console.log("HOO : " + parentEl.scrollTop)
-                }
-            }*/
-        },
-        /*
-        beforeMount () {
-            window?.addEventListener('resize', this.handleResize)
-        },
-        beforeDestroy () {
-            window?.removeEventListener('resize', this.handleResize)
-        },*/
 
+        }
     };
 </script>
