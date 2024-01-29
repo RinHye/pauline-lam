@@ -120,14 +120,23 @@ h3 {
 }
 
 .highlighted-text {
-  color: $white;
-  text-shadow: 0px 0px 10px $white;
   font-weight: 600;
-  a.unstyled-link:hover, &.unstyled-link:hover,
-  a.unstyled-link:active, &.unstyled-link:active  {
-    text-shadow: 0px 2px 10px $blue;
-    color: $blue;
-    transition: 300ms;
+  a {
+    text-shadow: 0px 0px 5px $white;  
+    position: relative;
+    color: $white;
+    overflow: hidden;
+    background: linear-gradient(to right, $blue, $blue 50%, $white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    &:hover {
+        text-shadow: 0px 0px 5px $blue;
+        background-position: 0 100%;
+    }
   }
 }
 
