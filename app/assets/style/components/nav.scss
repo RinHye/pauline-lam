@@ -1,4 +1,13 @@
 nav {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+    }
+
+
     .nav_links {
         a {
             text-shadow: 2px 2px 5px $white;  

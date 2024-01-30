@@ -1,5 +1,5 @@
 <template>
-    <nav class="text-uppercase">
+    <nav class="text-uppercase mw-100 overflow-hidden">
         <label>
             <input id="navBox" type="checkbox"/>
             <span class="menu">

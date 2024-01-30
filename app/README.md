@@ -5,3 +5,19 @@ npm install
 Delete folder node_modules and package-lock.json file
 
 docker-compose up --build
+
+
+
+_____
+
+Static build and its git :
+
+npx generate nuxt
+
+git remote add origin git@github.com:RinHye/rinhye.github.io.git
+
+git add *
+
+git commit
+
+git push --set-upstream origin main -f
