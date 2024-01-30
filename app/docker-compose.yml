@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  nuxt:
+    image: node:14.21.3-alpine
+    container_name: nuxt-app
+    working_dir: /usr/src/nuxt-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/var/www/html
+    command: "npm run dev"
+
+  bootstrap:
+    image: node:14.21.3-alpine
+    container_name: bootstrap-app
+    working_dir: /usr/src/nuxt-app
+    volumes:
+      - ./app:/usr/src/nuxt-app
+    command: "npm install bootstrap"
+
+  sass:
+    image: node:14.21.3-alpine
+    container_name: sass-app
+    working_dir: /usr/src/nuxt-app
+    volumes:
+      - ./app:/usr/src/nuxt-app
+    command: "npm install sass sass-loader"
