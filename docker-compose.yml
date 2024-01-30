@@ -2,11 +2,10 @@ version: '3'
 
 services:
   nuxt:
-    image: node:14.21.3-alpine
     container_name: nuxt-app
-    working_dir: /usr/src/nuxt-app
+    build:
+      context: ./app
     ports:
       - "3000:3000"
     volumes:
       - ./app:/var/www/html
-    command: "npm run dev"
