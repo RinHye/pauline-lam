@@ -1,8 +1,8 @@
 <template>
-    <nav class="text-uppercase mw-100 overflow-hidden">
+    <nav class="text-uppercase overflow-hidden">
         <label>
             <input id="navBox" type="checkbox"/>
-            <span class="menu">
+            <span :class="navClicked? 'menu' : 'menu nav_clicked'" @click="navIsClicked()">
                 <span class="hamburger"></span>
             </span>
             <ul class="nav_links">
@@ -37,6 +37,7 @@
         data() {
             return {
                 active: false,
+                navClicked: false
             }
         },
         methods: {
@@ -47,6 +48,7 @@
                 let input = document?.getElementById('navBox') as HTMLInputElement;
                 if (input?.checked) {
                     input.checked = !(input.checked);
+                    this.navClicked = false
                 }
 
             },
@@ -59,9 +61,15 @@
                             input.checked = !(input.checked);
                         }
                     }
-
+                    this.navClicked = false
+                }
+            },
+            navIsClicked() {
+                if(!this.navClicked){
+                    this.navClicked = true
                 }
             }
+
         },
         mounted() {
             if(process.client){
