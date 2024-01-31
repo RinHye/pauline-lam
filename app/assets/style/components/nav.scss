@@ -71,7 +71,7 @@ label {
                 box-shadow: 0 0 0 100vw $black, 0 0 0 100vh $black;
                 border-radius: 0;
                 + ul { 
-                    opacity: 1; 
+                    display: block; 
                 }
                 .hamburger{
                     -webkit-transform: rotate(45deg);
@@ -92,13 +92,14 @@ label {
         }
     }
     ul {
+        display: none;
         z-index: 200;
         position: absolute;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        opacity: 0;
+        
         -webkit-transition: .25s 0s ease-in-out;
         transition: .25s 0s ease-in-out;
         list-style: none;
