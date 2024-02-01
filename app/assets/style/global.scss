@@ -12,17 +12,6 @@ html, body, #__nuxt, main{
 
 }
 
-main {
- 
-  overflow: scroll;
-  scroll-snap-type: proximity;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y proximity;
-  .section_page, section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-}
 *::-webkit-scrollbar {
   width: 5px;
   height: 5px;
