@@ -14,7 +14,11 @@ Static build and its git :
 
 npx generate nuxt
 
+cd .output/public
+
 git remote add origin git@github.com:RinHye/rinhye.github.io.git
+
+git init
 
 git add *
 

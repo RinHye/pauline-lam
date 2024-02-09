@@ -101,3 +101,10 @@
     }
 
 }
+
+.img_desktop {
+    width: 800px;
+    @media screen and (max-width: 1200px) {
+        width: 90%;
+    }
+}
