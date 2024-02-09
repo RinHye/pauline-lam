@@ -16,9 +16,9 @@ npm run generate
 
 cd .output/public
 
-git remote add origin git@github.com:RinHye/rinhye.github.io.git
-
 git init
+
+git remote add origin git@github.com:RinHye/rinhye.github.io.git
 
 git add *
 
