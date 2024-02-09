@@ -87,12 +87,12 @@
                         <h3 class="mb-4 text-start">Moodboard</h3>
 
                         <p>
-                            Pour le Moodboard, j'ai réfléchi sur ce qu'il fallait <span class="fw-bold highlighted_word">mettre en avant</span> pour WorkAdventure. Voici les mots clés que j’ai retenus, avec les couleurs auxquels ils correspondent basés sur la <span class="fw-bold highlighted_word">psychologie des couleurs</span> :
+                            Pour le Moodboard, j'ai réfléchi aux points qu'il fallait <span class="fw-bold highlighted_word">mettre en avant</span> pour WorkAdventure. Voici les mots clés que j’ai retenus, avec les couleurs auxquels ils correspondent basés sur la <span class="fw-bold highlighted_word">psychologie des couleurs</span> :
                         </p>
                         <ul>
-                            <li>Ludique : la couleur associée psychologiquement est la couleur orange.</li>
-                            <li>Confiance : soit la couleur bleu, soit la couleur noir.</li>
-                            <li>Rétro-gaming : ce mot va me servir à trouver des images qui vont m'inspirer.</li>
+                            <li>Le côté ludique : la couleur associée psychologiquement est la couleur orange.</li>
+                            <li>La confiance : soit la couleur bleu, soit la couleur noir.</li>
+                            <li>le côté rétro-gaming : ce mot va me servir à trouver des images qui vont m'inspirer.</li>
                         </ul>
                         <p>J’ai donc tapé tous ces mots dans des sites d’images comme Pinterest, Pexel et Unsplash et gardé les images qui m'ont inspirées.</p>    
                         <p>Puis, j'ai effectué un tri en ne conservant que <span class="fw-bold highlighted_word">les images les plus pertinentes</span> selon moi. Voici le moodboard obtenu :</p>

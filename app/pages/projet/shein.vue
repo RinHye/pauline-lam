@@ -98,7 +98,7 @@
                         <h3 class="mb-4 text-start">Moodboard</h3>
 
                         <p>
-                            Pour le Moodboard, j'ai réfléchi sur ce qu'il fallait <span class="fw-bold highlighted_word">représenter</span> la marque SHEIN. Voici les mots clés que j’ai retenus, avec les couleurs auxquels ils correspondent basés sur la <span class="fw-bold highlighted_word">psychologie des couleurs</span> :
+                            Pour le Moodboard, j'ai réfléchi aux mots qui pouvaient le mieux <span class="fw-bold highlighted_word">représenter</span> la marque SHEIN. Voici les mots clés que j’ai retenus, avec les couleurs auxquels ils correspondent basés sur la <span class="fw-bold highlighted_word">psychologie des couleurs</span> :
                         </p>
                         <ul>
                             <li>Fashion, tendance</li>
