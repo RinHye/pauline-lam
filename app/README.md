@@ -12,7 +12,7 @@ _____
 
 Static build and its git :
 
-npx generate nuxt
+npm run generate
 
 cd .output/public
 
