@@ -195,11 +195,11 @@ const hc = {
 }
 
 
-projects.push(alpiq, bacc, hc, woka, shein, jazzcafe, flupaux)
+projects.push(bacc, woka, shein, alpiq, jazzcafe, hc, flupaux)
 
-list1.push(alpiq, bacc, sitecv);
-list2.push(woka, shein, jazzcafe);
-list3.push(flupaux, hc);
+//list1.push(alpiq, bacc, sitecv);
+//list2.push(woka, shein, jazzcafe);
+//list3.push(flupaux, hc);
 
 export const PROJECTS = projects;
 
