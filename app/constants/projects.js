@@ -195,7 +195,7 @@ const hc = {
 }
 
 
-projects.push(bacc, woka, shein, alpiq, jazzcafe, hc, flupaux)
+projects.push(bacc, woka, shein, alpiq, jazzcafe, hc)
 
 //list1.push(alpiq, bacc, sitecv);
 //list2.push(woka, shein, jazzcafe);

@@ -23,21 +23,13 @@
 
 <script lang="ts">
 
-    import { LIST1, LIST2, LIST3, PROJECTS } from '@/constants/'
+    import { PROJECTS } from '@/constants/'
 
     export default {
         setup() {
             const projects : any[] = PROJECTS
 
-            const list1 : any[] = LIST1
-
-            const list2 : any[] = LIST2
-
-            const list3 : any[] = LIST3
             return {
-                list1,
-                list2,
-                list3,
                 projects
             }
         },

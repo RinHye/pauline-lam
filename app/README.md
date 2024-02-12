@@ -12,6 +12,8 @@ _____
 
 Static build and its git :
 
+cd /app
+
 npm run generate
 
 cd .output/public
@@ -19,6 +21,8 @@ cd .output/public
 git init
 
 git remote add origin git@github.com:RinHye/rinhye.github.io.git
+
+git checkout -b main
 
 git add *
 
