@@ -112,7 +112,7 @@ const jazzcafe = {
     ],
     link: 'jazzcafe'
 }
-
+/*
 const flupaux = {
     title: 'Flupa UX',
     subtitle: 'Projet UXUI en Ingénierie du Web',
@@ -130,6 +130,32 @@ const flupaux = {
         }
     ],
     link: 'flupa'
+}
+*/
+
+const bubblesmapper = {
+    title: 'BubblesMapper',
+    subtitle: 'Refonte du site web',
+    imageRef: imgFolder + 'BubblesMapper.jpg',
+    contents: [
+        {
+            isList: false,
+            title: 'But du projet',
+            description: 'Réaliser une refonte visuelle du site de BubblesMapper. Le contenu du site est imposé par le client.'
+        },
+        {
+            isList: true,
+            title: 'Tâches',
+            bullet_list: [
+                'Création du moodboard, qui me permet ensuite de créer la charte graphique du site.',
+                'Création des maquettes version mobile et desktop du site sous Figma.',
+                'Réalisation de quelques illustrations du site.',
+                'Propositions de redesign de quelques interfaces de l’application mobile.',
+                'Collaboration avec une graphiste qui a réalisé le logo et les dessins liés à la mascotte de BubblesMapper.',
+            ]
+        }
+    ],
+    link: 'bubblesmapper'
 }
 
 const coriolis = {
@@ -195,7 +221,7 @@ const hc = {
 }
 
 
-projects.push(bacc, woka, shein, alpiq, jazzcafe, hc)
+projects.push(bubblesmapper, bacc, woka, shein, alpiq, jazzcafe, hc)
 
 //list1.push(alpiq, bacc, sitecv);
 //list2.push(woka, shein, jazzcafe);

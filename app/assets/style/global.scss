@@ -28,10 +28,20 @@ html, body, #__nuxt, main{
 }
 
 .unstyled-link {
-  color: inherit;
-  text-decoration: inherit;
-}
+  color: $white;
+  text-decoration: $lavender underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 1px;
+  &:hover {
+    text-shadow: 0px 0px 5px $blue;
+    text-decoration: $blue underline;
 
+  }
+}
+.div-btn-neon .unstyled-link, .text-uppercase.unstyled-link {
+  text-decoration: none;
+  text-shadow: unset;
+}
 .section_home {
 
   background: $bg-gradient-full;

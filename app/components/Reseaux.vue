@@ -1,7 +1,7 @@
 
 <template>
     <div :class="classList">
-        <a href="mailto:pauline.lam24@gmail.com" subject="Contact professionnel" title="Envoyer un mail en cliquant ici">
+        <a href="mailto:contactpro.pauline.lam@gmail.com" subject="Contact professionnel" title="Envoyer un mail en cliquant ici">
             <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                 <rect x="1" y="1" width="48" height="48" rx="24" fill="#030303"/>
                 <rect x="1" y="1" width="48" height="48" rx="24" stroke="url(#paint0_linear_1024_288)" stroke-width="2"/>

@@ -81,7 +81,7 @@
                                     J'ai <span class="fw-bold highlighted_word">géré des développeurs</span> pour des tâches techniques.
                                 </li>
                                 <li>
-                                    J'ai participé aux différents cérémonies <span class="fw-bold highlighted_word">scrum</span>.
+                                    J'ai participé aux différentes cérémonies <span class="fw-bold highlighted_word">scrum</span>.
                                 </li>
                             </ul>
                         </div>

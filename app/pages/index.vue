@@ -39,7 +39,14 @@
                         </p>
                     </div>
                     <div>
-                    <blockquote class="quotes">" The only way to do great work is <br class="d-md-block d-none">to love what you do."</blockquote>
+                        <blockquote class="quotes">" The only way to do great work is <br class="d-md-block d-none">to love what you do."</blockquote>
+                        <p>
+                            Disponible dès <span class="fw-bold highlighted_word">maintenant</span> en remote ou sur Paris<br>
+                        </p>
+                    <!--
+                        <blockquote class="quotes">" The only way to do great work is <br class="d-md-block d-none">to love what you do."</blockquote>
+                    
+                    -->
                     </div>
                     <NeonButton :label-btn="labelProjets" :link="projetsLink" />
                 </div>
@@ -65,11 +72,18 @@
                 
                 <div class="d-flex flex-lg-wrap flex-column flex-lg-row align-items-center align-items-lg-baseline justify-content-between">
                     <p class="my-2">
-                        Anciennement développeur puis chef de projet technique dans le domaine du web, j'ai décidé de me plonger dans l'UX/UI design pour compléter mes compétences web.
+                        Anciennement développeuse puis chef de projet technique dans le domaine du web, j'ai décidé de me plonger dans l'<span class="fw-bold highlighted_word">UX/UI Design</span> pour compléter mes compétences <span class="fw-bold highlighted_word">web</span>.
                     </p>
                     <p class="my-2">
-                        Grâce à mon expertise polyvalente, je voudrais aider les entreprises à promouvoir leur marque en construisant des projets user-friendly et adaptés à leur image. 
+                        Grâce à mon <span class="fw-bold highlighted_word">expertise polyvalente</span>, je voudrais aider les entreprises à <span class="fw-bold highlighted_word">promouvoir</span> leur marque en construisant des projets <span class="fw-bold highlighted_word">user-friendly</span> et <span class="fw-bold highlighted_word">adaptés à leur image</span>. 
                     </p>
+                    <p class="my-2">
+                        Aujourd'hui, je propose des services d'<span class="fw-bold highlighted_word">UX</span>, <span class="fw-bold highlighted_word">UI Design</span> et d'<span class="fw-bold highlighted_word">intégration</span> web <span class="fw-bold highlighted_word">responsives.</span><br>
+                    </p>
+                    <p class="my-2">
+                        Le site sur lequel vous êtes a été entièrement fait par moi-même de A à Z, que ce soit dans la conception ou même le développement du site programmé en Nuxt avec du Sass et du Bootstrap.<br>
+                    </p>
+                    <p>N'hésitez pas à me contacter par <a class="fw-bold unstyled-link highlighted-text" href="mailto:contactpro.pauline.lam@gmail.com" subject="Contact professionnel" title="Envoyer un mail en cliquant ici">mail</a> ou sur <a class="fw-bold unstyled-link highlighted-text" href="https://www.linkedin.com/in/pauline-lam-7bb427202/">LinkedIn</a>.</p>
                 </div>
             </div>
         </section>
@@ -89,7 +103,6 @@
             const currentLink = '/'
             const projetsLink = '#projets'
             return {
-
                 projects,
                 labelProjets,
                 currentLink,
