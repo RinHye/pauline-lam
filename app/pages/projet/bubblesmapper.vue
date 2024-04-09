@@ -65,14 +65,14 @@
                     <div class="mt-5 mt-lg-auto right-content">
                         <div class="mb-5">
                             <h3 class="mb-4">But du projet</h3>
-                            <p>Réaliser une refonte visuelle du site de BubblesMapper. Le contenu du site est imposé par le client.</p>
+                            <p>Réaliser une refonte visuelle du site web de BubblesMapper. Le contenu du site est imposé par le client.</p>
                             </div>
                         <div class="mt-5">
                             <h3 class="mb-4">Mes tâches</h3>
                             <p>Pour ce projet, j’ai réalisé : :</p>
                             <ul>
                                 <li>
-                                    Le <span class="fw-bold highlighted_word">moodboard</span> de l’application qui me permet de créer la <span class="fw-bold highlighted_word">charte graphique</span> du site.
+                                    Le <span class="fw-bold highlighted_word">moodboard</span> de l’application qui me permet de créer la <span class="fw-bold highlighted_word">Style guide</span> du site.
                                 </li>
                                 <li>
                                     Les maquettes version <span class="fw-bold highlighted_word">mobile</span> et <span class="fw-bold highlighted_word">desktop</span> du site.
@@ -95,12 +95,11 @@
                 <div class="mt-lg-5 d-flex flex-column">
                     <div class="mb-5 mt-5">
                         <h3 class="mb-4 text-start">Moodboard</h3>
-
                         <p>
-                            Pour le Moodboard, j'ai réfléchi aux mots qui pouvaient le mieux <span class="fw-bold highlighted_word">représenter</span> l'application de BubblesMapper. Voici les mots clés que j’ai retenus, avec les couleurs auxquels ils correspondent basés sur la <span class="fw-bold highlighted_word">psychologie des couleurs</span> :
+                            Pour le Moodboard, j'ai réfléchi avec la graphiste aux mots qui pouvaient le mieux <span class="fw-bold highlighted_word">représenter</span> l'application de BubblesMapper. Voici les mots clés que j’ai retenus, avec les couleurs auxquels ils correspondent basés sur la <span class="fw-bold highlighted_word">psychologie des couleurs</span> :
                         </p>
                         <ul>
-                            <li>Eau</li>
+                            <li>Eau : l'application répertorie majoritairement des points d'eaux.</li>
                             <li>Aide et pratique : BubblesMapper est une application qui veut aider ses utilisateurs lors de ses déplacements urbains.</li>
                             <li>Map : l'application cartographie des points d'eaux.</li>
                             <li>Bulles : en référence au nom de l'application.</li>
@@ -109,6 +108,27 @@
                         <p>Puis, j'ai effectué un tri en ne conservant que <span class="fw-bold highlighted_word">les images les plus pertinentes</span> selon moi. Voici le moodboard obtenu :</p>
                         <div class="mt-5 mb-5">
                             <img class="w-100" src="/images/projets/bbm/moodboard.png" alt="moodboard réalisé pour BubblesMapper"/>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="mt-5 section_page d-flex justify-content-center">
+            <div class="section_projet mt-5">
+                <div class="mt-5 d-flex flex-column">
+                    <div class="mb-5">
+                        <h3 class="mb-5 text-start">Style guide</h3>
+                        <p>
+                            Après avoir réalisé le <span class="fw-bold highlighted_word">moodboard</span>, j'ai créé le <span class="fw-bold highlighted_word">style guide</span> qui permet de garder de la <span class="fw-bold highlighted_word">consistence</span> et de la <span class="fw-bold highlighted_word">cohérence</span> à la réalisation des maquettes.
+                        </p>
+                        <div class="text-center my-5">
+                          <img class="vertical_img" src="/images/projets/bbm/style.jpg" alt="Style guide réalisé pour SHEIN"/>
+                        </div>
+                        <p>
+                            J'ai également réalisé des icônes illustratives pour le site :
+                        </p>
+                        <div class="text-center my-5">
+                          <img class="vertical_img" src="/images/projets/bbm/illu.jpg" alt="Illustrations réalisées pour le site de BubblesMapper."/>
                         </div>
                     </div>
                 </div> 
