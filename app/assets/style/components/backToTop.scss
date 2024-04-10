@@ -4,4 +4,7 @@
     svg {
         transform: rotate(180deg);
     }
+    &.unstyled-link {
+        text-decoration: none;
+    }
 }

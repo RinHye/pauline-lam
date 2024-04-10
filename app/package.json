@@ -17,6 +17,7 @@
     "sass-loader": "^13.3.2"
   },
   "dependencies": {
-    "bootstrap": "^5.3.1"
+    "bootstrap": "^5.3.1",
+    "semver": "^7.6.0"
   }
 }
