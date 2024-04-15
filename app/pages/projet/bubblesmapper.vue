@@ -52,14 +52,14 @@
                     <div class="mt-5 mt-lg-auto right-content">
                         <div class="mb-5">
                             <h3 class="mb-4">But du projet</h3>
-                            <p>Réaliser une refonte visuelle du site web de BubblesMapper. Le contenu du site est imposé par le client.</p>
+                            <p>Réaliser une refonte visuelle du site web de BubblesMapper. Le <span class="fw-bold highlighted_word">contenu</span> du site est <span class="fw-bold highlighted_word">imposé</span> par le client.</p>
                             </div>
                         <div class="mt-5">
                             <h3 class="mb-4">Mes tâches</h3>
                             <p>Pour ce projet, j’ai réalisé :</p>
                             <ul>
                                 <li>
-                                    Le <span class="fw-bold highlighted_word">moodboard</span> de l’application qui me permet de créer la <span class="fw-bold highlighted_word">Style guide</span> du site.
+                                    Le <span class="fw-bold highlighted_word">moodboard</span> de l’application qui me permet de créer le <span class="fw-bold highlighted_word">style guide</span> du site.
                                 </li>
                                 <li>
                                     Les maquettes version <span class="fw-bold highlighted_word">mobile</span> et <span class="fw-bold highlighted_word">desktop</span> du site.
@@ -87,6 +87,7 @@
                         </p>
                         <ul>
                             <li>Eau : l'application répertorie majoritairement des points d'eaux.</li>
+                            <li>Toilettes : les points d'eaux les plus répertoriés de l'application sont les toilettes.</li>
                             <li>Aide et pratique : BubblesMapper est une application qui veut aider ses utilisateurs lors de ses déplacements urbains.</li>
                             <li>Map : l'application cartographie des points d'eaux.</li>
                             <li>Bulles : en référence au nom de l'application.</li>
@@ -116,6 +117,95 @@
                         </p>
                         <div class="text-center my-5">
                           <img class="vertical_img" src="/images/projets/bbm/illu.jpg" alt="Illustrations réalisées pour le site de BubblesMapper."/>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="d-none d-md-flex mt-5 section_page justify-content-center">
+            <div class="section_projet mt-5">
+                <div class="mt-md-5 d-flex flex-column">
+                    <div class="mb-0">
+                        <h3 class="mb-5 text-start">L'avant-après redesign du site web</h3>
+                        <p>
+                            Voici l'avant-après des sections du site côté business :
+                        </p>
+                        <div class="text-center my-5 w-100">
+                            <img class="w-100" src="/images/projets/bbm/avant-apres/1.png" alt="Avant-après du site web - sections côté business"/>
+                        </div>
+                        <p>
+                            Voici l'avant-après des sections du site côté particulier :
+                        </p>
+                        <div class="text-center my-5 w-100">
+                            <img class="w-100" src="/images/projets/bbm/avant-apres/2.png" alt="Avant-après du site web - sections accueil côté particulier"/>
+                        </div>              
+                        <div class="text-center my-5 w-100">
+                            <img class="w-100" src="/images/projets/bbm/avant-apres/3.png" alt="Avant-après du site web - sections introduction et fonctionnalités"/>
+                        </div>
+                        <p>
+                            Voici l'avant-après du bas de page (footer) :
+                        </p>
+                        <div class="text-center my-5 w-100">
+                            <img class="w-100" src="/images/projets/bbm/avant-apres/footer.png" alt="Avant-après du pied de page du site"/>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="mt-5 section_page d-flex justify-content-center">
+            <div class="section_projet mt-5">
+                <div class="mt-md-5 d-flex flex-column">
+                    <div class="mb-5">
+                        <h3 class="mb-5 text-start">L'avant-après du redesign de l'application mobile</h3>
+                        <p>
+                            J'ai appliqué le style guide sur l'application mobile. Voici l'avant-après :
+                        </p>
+                        <div class="text-center my-5 w-100">
+                            <img class="w-100" src="/images/projets/bbm/avant-apres/home_evol.png" alt="Avant-après de deux écrans de l'application"/>
+                        </div>
+                        <div class="text-center my-5 w-100">
+                            <img class="w-100" src="/images/projets/bbm/avant-apres/map_evol.png" alt="Avant-après de deux écrans de l'application"/>
+                        </div>
+
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="mt-5 section_page d-flex justify-content-center">
+            <div class="section_projet mt-5">
+                <div class="mt-md-5 d-flex flex-column">
+                    <div class="mb-0">
+                        <h3 class="mb-5 text-start">Prototype Figma Desktop</h3>
+                        <div class="desktop_iframe my-5">
+                            <iframe width="1214" height="683" src="https://www.youtube.com/embed/2Ha-IB0wZhs" title="Redesign du site web BubblesMapper (Desktop)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="mt-5 section_page d-flex justify-content-center last_div-margin">
+            <div class="section_projet mt-5">
+                <div class="mt-md-5 d-flex flex-column">
+                    <div class="mb-0">
+                        <h3 class="mb-5 text-start">Prototype Figma mobile</h3>
+                        <p>J'ai créé un prototype interactif sous Figma pour vous présenter le redesign complet.</p>
+                        <div class="mt-3 phone_screen d-flex justify-content-center align-items-center">
+                            <img class="" src="@/public/images/phone-screen.png" alt="phone screen border"/>
+                            <iframe class="phone_iframe" src="https://www.youtube.com/embed/Xx6QG86BSIc" title="Redesign du site web de BubblesMapper (mobile)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                            <svg class="circle" width="1202" height="1029" viewBox="0 0 1202 1029" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="xl_circle" cx="596" cy="529" r="500" fill="url(#paint0_linear_1036_151)"/>
+                                <circle class="sm_circle" cx="96" cy="10" r="10" fill="#C71BF9"/>
+                                <circle class="md_circle" cx="25" cy="118" r="25" fill="#C71BF9"/>
+                                <circle class="sm_circle" cx="1192" cy="896" r="10" fill="#2496DA"/>
+                                <circle class="md_circle" cx="1121" cy="1004" r="25" fill="#2496DA"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_1036_151" x1="1096" y1="1029" x2="81.6219" y2="43.804" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00B0D3"/>
+                                <stop offset="1" stop-color="#EB00FF"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
                         </div>
                     </div>
                 </div> 
