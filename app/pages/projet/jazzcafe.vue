@@ -37,10 +37,10 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center">
+        <section class="section_page d-flex justify-content-center">
             <div class="section_projet mt-5">
-                <div class="mt-lg-5 d-flex flex-column">
-                    <div class="mb-0">
+                <div class="mt-5 d-flex flex-column">
+                    <div class="mb-5">
                         <h3 class="mb-4 text-start">Maquettes page d'accueil</h3>
                         <p class="mb-5">Voici les maquettes mobile et desktop de la page d'accueil : </p>
 
@@ -57,7 +57,7 @@
                 </div> 
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center last_div-margin">
+        <section class="section_page d-flex justify-content-center last_div-margin">
             <div class="section_projet mt-5">
                 <div class="mt-5 d-flex flex-column">
                     <div class="mb-0">

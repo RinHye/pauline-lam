@@ -65,10 +65,10 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center">
-            <div class="section_projet">
-                <div class="mt-lg-5 d-flex flex-column">
-                    <div class="my-5">
+        <section class="section_page d-flex justify-content-center">
+            <div class="section_projet mt-5">
+                <div class="mt-5 d-flex flex-column">
+                    <div class="mb-5">
                         <div>
                             <h3 class="mb-4 text-start">Prototype Figma Mobile</h3>
                             <p class="mb-5">Ceci est le prototype Hi-fi résultant de toutes les étapes du process du Design Thinking.</p>
@@ -104,12 +104,12 @@
                 </div> 
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center last_div-margin">
+        <section class="section_page d-flex justify-content-center last_div-margin">
             <div class="section_projet mt-5">
                 <div class="mt-5 d-flex flex-column">
                     <div class="mb-0">
                         <h3 class="mb-5 text-start">Prototype Figma Desktop</h3>
-                        <div class="desktop_iframe my-5">
+                        <div class="desktop_iframe overflow-hidden my-5">
                             <iframe src="https://www.youtube.com/embed/JPFV1fCCt5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>

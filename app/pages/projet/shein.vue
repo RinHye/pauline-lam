@@ -78,10 +78,10 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center">
+        <section class="section_page d-flex justify-content-center">
             <div class="section_projet">
-                <div class="mt-lg-5 d-flex flex-column">
-                    <div class="mb-5 mt-5">
+                <div class="mt-5 d-flex flex-column">
+                    <div class="my-5">
                         <h3 class="mb-4 text-start">Moodboard</h3>
 
                         <p>
@@ -101,10 +101,10 @@
                 </div> 
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center">
-            <div class="section_projet mt-5">
+        <section class="section_page d-flex justify-content-center">
+            <div class="section_projet">
                 <div class="mt-5 d-flex flex-column">
-                    <div class="mb-5">
+                    <div class="my-5">
                         <h3 class="mb-5 text-start">Style guide</h3>
                         <p>
                             Après avoir réalisé le <span class="fw-bold highlighted_word">moodboard</span>, j'ai créé le <span class="fw-bold highlighted_word">style guide</span> qui permet de garder de la <span class="fw-bold highlighted_word">consistence</span> et de la <span class="fw-bold highlighted_word">cohérence</span> à la réalisation des maquettes.
@@ -116,10 +116,10 @@
                 </div> 
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center last_div-margin">
-            <div class="section_projet mt-5">
+        <section class="section_page d-flex justify-content-center last_div-margin">
+            <div class="section_projet">
                 <div class="mt-5 d-flex flex-column">
-                    <div class="mb-0">
+                    <div class="my-5">
                         <h3 class="mb-5 text-start">Prototype Figma mobile</h3>
                         <p>J'ai créé un prototype interactif sous Figma pour vous présenter le redesign complet.</p>
                         <div class="mt-3 phone_screen d-flex justify-content-center align-items-center">

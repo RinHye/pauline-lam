@@ -40,9 +40,7 @@ Lors du generate, erreur sur **semver** :
 - Supprimer *package-lock.json* et *node_modules*.
 
 - ```npm install --legacy-peer-deps```
-  - si la commande n'apas marché, sudo chmod 777 <les_dossiers_concernes>
-
-- ```npm install --legacy-peer-deps```
+  - si la commande n'a pas marché, sudo chmod 777 <les_dossiers_concernes>, puis relancer la commande.
 
 - ```npm install```
 

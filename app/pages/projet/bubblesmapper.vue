@@ -77,9 +77,9 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center">
-            <div class="section_projet">
-                <div class="mt-lg-5 d-flex flex-column">
+        <section class="section_page d-flex justify-content-center">
+            <div class="section_projet mt-5">
+                <div class="mt-5 d-flex flex-column">
                     <div class="mb-5 mt-5">
                         <h3 class="mb-4 text-start">Moodboard</h3>
                         <p>
@@ -87,7 +87,7 @@
                         </p>
                         <ul>
                             <li>Eau : l'application répertorie majoritairement des points d'eaux.</li>
-                            <li>Toilettes : les points d'eaux les plus répertoriés de l'application sont les toilettes.</li>
+                            <li>Toilettes et fontaines : les points d'eaux les plus répertoriés de l'application sont les toilettes et les fontaines.</li>
                             <li>Aide et pratique : BubblesMapper est une application qui veut aider ses utilisateurs lors de ses déplacements urbains.</li>
                             <li>Map : l'application cartographie des points d'eaux.</li>
                             <li>Bulles : en référence au nom de l'application.</li>
@@ -101,7 +101,7 @@
                 </div> 
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center">
+        <section class="section_page d-flex justify-content-center">
             <div class="section_projet mt-5">
                 <div class="mt-5 d-flex flex-column">
                     <div class="mb-5">
@@ -122,9 +122,9 @@
                 </div> 
             </div>
         </section>
-        <section class="d-none d-md-flex mt-5 section_page justify-content-center">
+        <section class="d-none d-md-flex section_page justify-content-center">
             <div class="section_projet mt-5">
-                <div class="mt-md-5 d-flex flex-column">
+                <div class="mt-5 d-flex flex-column">
                     <div class="mb-0">
                         <h3 class="mb-5 text-start">L'avant-après redesign du site web</h3>
                         <p>
@@ -152,9 +152,9 @@
                 </div> 
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center">
+        <section class="section_page d-flex justify-content-center">
             <div class="section_projet mt-5">
-                <div class="mt-md-5 d-flex flex-column">
+                <div class="mt-5 d-flex flex-column">
                     <div class="mb-5">
                         <h3 class="mb-5 text-start">L'avant-après du redesign de l'application mobile</h3>
                         <p>
@@ -171,21 +171,21 @@
                 </div> 
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center">
+        <section class="section_page d-flex justify-content-center">
             <div class="section_projet mt-5">
-                <div class="mt-md-5 d-flex flex-column">
-                    <div class="mb-0">
+                <div class="mt-5 d-flex flex-column">
+                    <div class="mb-5">
                         <h3 class="mb-5 text-start">Prototype Figma Desktop</h3>
-                        <div class="desktop_iframe my-5">
+                        <div class="desktop_iframe overflow-hidden my-5">
                             <iframe width="1214" height="683" src="https://www.youtube.com/embed/2Ha-IB0wZhs" title="Redesign du site web BubblesMapper (Desktop)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        
                         </div>
                     </div>
                 </div> 
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center last_div-margin">
+        <section class="section_page d-flex justify-content-center last_div-margin">
             <div class="section_projet mt-5">
-                <div class="mt-md-5 d-flex flex-column">
+                <div class="mt-5 d-flex flex-column">
                     <div class="mb-0">
                         <h3 class="mb-5 text-start">Prototype Figma mobile</h3>
                         <p>J'ai créé un prototype interactif sous Figma pour vous présenter le redesign complet.</p>

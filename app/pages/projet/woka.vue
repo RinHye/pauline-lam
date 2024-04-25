@@ -67,10 +67,10 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center">
+        <section class="section_page d-flex justify-content-center">
             <div class="section_projet">
-                <div class="mt-lg-5 d-flex flex-column">
-                    <div class="mb-0 mt-5">
+                <div class="mt-5 d-flex flex-column">
+                    <div class="my-5">
                         <h3 class="mb-4 text-start">Moodboard</h3>
 
                         <p>
@@ -105,12 +105,12 @@
                 </div> 
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center last_div-margin">
+        <section class="section_page d-flex justify-content-center last_div-margin">
             <div class="section_projet mt-5">
                 <div class="mt-5 d-flex flex-column">
-                    <div class="mb-0">
+                    <div class="mb-5">
                         <h3 class="mb-5 text-start">Prototype Figma Desktop</h3>
-                        <div class="desktop_iframe mb-5">
+                        <div class="desktop_iframe overflow-hidden mb-5">
                             <iframe width="975" height="683" src="https://www.youtube.com/embed/0z5UaipP7xA" title="WorkAdventure Redesign" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
                         </div>
                     </div>

@@ -102,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5 section_page d-flex justify-content-center last_div-margin">
+        <section class="section_page d-flex justify-content-center last_div-margin">
             <div class="section_projet mt-5">
                 <div class="mt-5 d-flex flex-column">
                     <div class="mb-0">
